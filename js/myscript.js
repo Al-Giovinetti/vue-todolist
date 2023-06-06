@@ -5,23 +5,23 @@ createApp({
         return {
             valigia : [
                 {
-                    item: "mutanda",
+                    item: "mettere mutanda",
                     done: true
                 },
                 {
-                    item: "calzini",
+                    item: "mettere calzini",
                     done: false
                 },
                 {
-                    item: "pantaloni",
+                    item: "mettere pantaloni",
                     done: false
                 },
                 {
-                    item: "maglia",
+                    item: "mettere maglia",
                     done: true
                 },
                 {
-                    item: "cappello",
+                    item: "mettere cappello",
                     done: true
                 },
             ]

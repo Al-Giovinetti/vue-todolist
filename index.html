@@ -16,7 +16,7 @@
         <main>
             <h2>To do List </h2>
             <ul>
-                <li v-for="(object,index) in valigia">
+                <li v-for="(object,index) in valigia" :class="valigia[index].done == true ? 'sbarra' : ' '">
                     {{ valigia[index].item }}
                 </li>
             </ul>
