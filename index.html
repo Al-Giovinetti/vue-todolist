@@ -31,8 +31,8 @@
                 </section>
                 <section id="section-add">
                     <p>Aggiungi un nuovo elemento alla tua lista</p>
-                    <input type="text" name="newItem" id="newItem" placeholder="Inserisci qui il nuovo elemento">
-                    <button>Add</button>
+                    <input type="text" name="newItem" id="newItem" placeholder="Inserisci qui il nuovo elemento" v-model="newItem">
+                    <button @click="addNewItem(newItem)">Add</button>
 
                 </section>
             </div>

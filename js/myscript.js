@@ -24,7 +24,8 @@ createApp({
                     item: "mettere cappello",
                     done: true
                 },
-            ]
+            ],
+            newItem : " "
                 
         
             
@@ -33,6 +34,20 @@ createApp({
     methods: {
         delateItemInList(index){
             this.valigia.splice(index,1)
+        },
+        addNewItem(newItem){
+            let newElement = {
+                item: newItem,
+                done: false
+            } 
+            if(newItem != " "){
+                this.valigia.push(newElement)
+                this.newItem =" "  
+            }else{
+                alert("campo inserimento vuoto")
+            }
+
+            
         }
         
 
