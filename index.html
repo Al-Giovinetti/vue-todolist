@@ -15,9 +15,9 @@
             <h1>My suitcase</h1>
         </header>
         <main>
-            <h2>To do List </h2>
             <div class="container flex">
                 <section>
+                    <h2>To do List </h2>
                     <ul >
                         <li v-for="(object,index) in valigia" class="flex">
                             <p @click="invertDone(index)" :class="valigia[index].done == true ? 'sbarra' : ' '" >
@@ -31,7 +31,7 @@
                 </section>
                 <section id="section-add">
                     <p>Aggiungi un nuovo elemento alla tua lista</p>
-                    <input type="text" name="newItem" id="newItem" placeholder="Inserisci qui il nuovo elemento" v-model="newItem" @keyup.enter="addNewItem(newItem)">
+                    <input type="text" name="newItem" id="newItem" v-model="newItem" @keyup.enter="addNewItem(newItem)">
                     <button @click="addNewItem(newItem)">
                         Add
                     </button>

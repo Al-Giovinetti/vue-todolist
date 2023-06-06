@@ -6,7 +6,7 @@ createApp({
             valigia : [
                 {
                     item: "mettere mutanda",
-                    done: true
+                    done: false
                 },
                 {
                     item: "mettere calzini",
@@ -18,11 +18,11 @@ createApp({
                 },
                 {
                     item: "mettere maglia",
-                    done: true
+                    done: false
                 },
                 {
                     item: "mettere cappello",
-                    done: true
+                    done: false
                 },
             ],
             newItem : " "

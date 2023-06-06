@@ -8,25 +8,41 @@
     display: flex;
 }
 
-main > section{
-    display: inline;
+body{
+    background-color: gainsboro;
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+h2{
+    padding: 0.5rem 1rem;
+}
+
+div.container{
+    width: 600px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-image: url("../valigie.jpg");
 }
 
 main ul{
+    padding: 0 1rem 1rem 1rem;
     width: 250px;
-    border: 1px solid black;
-    padding: 1rem;
 }
 
 ul>li{
     justify-content: space-between;
     padding: 0.3rem 0;
-    border-bottom: 1px solid greenyellow;
+    border-bottom: 1px solid black;
 }
 
 #section-add{
-    width:calc(100% - 250px);
-    border: 1px 1px 1px 0 solid black;
+    border-left: 1px solid black;
 }
 
 #section-add>p{
@@ -39,9 +55,8 @@ ul>li{
 }
 
 section > input{
-    width: 50%;
+    width: 90%;
 }
-
 
 .sbarra{
     text-decoration: line-through;
