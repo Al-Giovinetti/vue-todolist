@@ -15,7 +15,11 @@
         </header>
         <main>
             <h2>To do List </h2>
-            <ul></ul>
+            <ul>
+                <li v-for="(object,index) in valigia">
+                    {{ valigia[index].item }}
+                </li>
+            </ul>
         </main>
         
     </div>
