@@ -31,6 +31,9 @@ createApp({
         }
     },
     methods: {
+        delateItemInList(index){
+            this.valigia.splice(index,1)
+        }
         
 
     },

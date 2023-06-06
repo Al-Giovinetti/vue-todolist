@@ -1,3 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+
+main ul{
+    width: 250px;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+ul>li{
+    justify-content: space-between;
+    padding: 0.3rem 0;
+    border-bottom: 1px solid greenyellow;
+}
+
+
 .sbarra{
     text-decoration: line-through;
+}
+
+.cursor-open{
+    cursor: grab;
 }

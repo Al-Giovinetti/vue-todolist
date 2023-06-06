@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To do List</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <script src="https://unpkg.com/vue@3"></script>
@@ -15,9 +16,14 @@
         </header>
         <main>
             <h2>To do List </h2>
-            <ul>
-                <li v-for="(object,index) in valigia" :class="valigia[index].done == true ? 'sbarra' : ' '">
-                    {{ valigia[index].item }}
+            <ul >
+                <li v-for="(object,index) in valigia" :class="valigia[index].done == true ? 'sbarra' : ' '" class="flex">
+                    <p :class="valigia[index].done == true ? 'sbarra' : ' '">
+                        {{ valigia[index].item }}
+                    </p>
+                    <span @click = "delateItemInList(index)" class="cursor-open">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                    </span>
                 </li>
             </ul>
         </main>
