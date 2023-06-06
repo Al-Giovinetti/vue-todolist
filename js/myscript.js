@@ -26,9 +26,7 @@ createApp({
                 },
             ],
             newItem : " "
-                
-        
-            
+      
         }
     },
     methods: {
@@ -45,9 +43,17 @@ createApp({
                 this.newItem =" "  
             }else{
                 alert("campo inserimento vuoto")
+            }    
+        },
+        invertDone(index){
+            alert("Stai cambiano lo stato dell' elemento")
+            if(this.valigia[index].done == false){
+                this.valigia[index].done = true
+            }else{
+                if(this.valigia[index].done == true){
+                    this.valigia[index].done = false
+                }
             }
-
-            
         }
         
 
